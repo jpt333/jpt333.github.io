@@ -1,191 +1,226 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="light">
 <head>
-<title>I'm Jennifer Phan</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Jennifer Phan – Professional Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    const theme = localStorage.getItem('theme');
+    if (theme) document.documentElement.setAttribute('data-theme', theme);
+  </script>
 </head>
 <body>
 
+<nav class="navbar">
+  <div class="brand">Jennifer Phan</div>
+  <div class="hamburger" id="nav-toggle"><span></span><span></span><span></span></div>
+  <div class="nav-links">
+    <a href="#about" class="smooth">About</a>
+    <a href="#work" class="smooth">Work</a>
+    <a href="#projects" class="smooth">Projects</a>
+    <a href="#skills" class="smooth">Skills</a>
+    <a href="#contact" class="smooth">Contact</a>
+  </div>
+  <div class="theme-switcher">
+    <input type="checkbox" id="theme-toggle">
+    <label for="theme-toggle"></label>
+  </div>
+</nav>
+
+<section id="about">
+  <h1>About Me</h1>
+  <p>Hi! I'm Jennifer, a software engineer specializing in full-stack development.  I have experience with technologies like Java, MySQL, SQL, PSQL, Python, and React. 
+    I'm eager to apply my skills ot work on innovative proejcts that helps improve technology since that's what the future holds.  I'm very curious about learning the different
+    aspects of computer science which includes database management, cyber-security, and software engineering. I'm always excited to take on any challenge that comes my way.
+    <br>  </br>
+    Outside of work I like to spend time with friends and family, play video games, and read development books.  I really love learning new things as well including languages such as Korean and Japanese.
+</p>
+</section>
+
+<section id="work">
+  <h2>Experience</h2>
+  
+  <div class="portfolio-grid">
+    <!-- Repeat project cards -->
+    <div class="card">
+        <img src="proj1.png" alt="">
+        <h3>Software Engineer II - Ball Aerospace/BAE Systems Inc.</h3>
+        <ul>
+          <li>Utilized Java, TypeScript, and Linux to help develop and maintain code case for the team</li>
+          <li>Achieved milestones on the team and assist with any issues that arise</li>
+          <li>Helped develop fault tolerant infrasturcture with Java and increated code coverage with Cucumber for test automation</li>
+          <li>Improved code base for data processing and resolved tickets in an agile environment</li>
+        </ul>
+    </div>
+  </div>
+  <div class="portfolio-grid">
+    <!-- Repeat project cards -->
+    <div class="card">
+        <img src="proj1.png" alt="">
+        <h3>PATHWAYS Associate Software Engineer - Northrop Grumman</h3>
+        <ul>
+          <li>Utilized Java, Python, C++, and Linux in an agile environment to help clients and analysts</li>
+          <li>Help maintain and monitor the system and fix any issues that arise in a timely manner</li>
+        </ul>
+    </div>
+  </div>
+  <div class="portfolio-grid">
+    <!-- Repeat project cards -->
+    <div class="card">
+        <img src="proj1.png" alt="">
+        <h3>Software Development Intern - Janus Henderson Investors</h3>
+        <Ul>
+          <li>As a full-stack developer, developed a custom plugin in WordPress that helps Content Management System Users troubleshoot problems that occur on the global website</li>
+          <li>Developed a dashboard displaying various data and metadata pulled from teh SQL database to provide efficiency and information to portfolio managers</li>
+        </Ul>
+    </div>
+  </div>
+  <div class="portfolio-grid">
+    <!-- Repeat project cards -->
+    <div class="card">
+        <img src="proj1.png" alt="">
+        <h3>Field Session - Footprint App, Inc.</h3>
+        <ul>
+          <li>With a team, created a mobile app for iOS and Android that tracks carbon footprint</li>
+        </ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="portfolio-grid">
+    <!-- Repeat project cards -->
+    <div class="card">
+        <img src="proj1.png" alt="">
+        <h3>Clue Game</h3>
+        <p>Developed with Java for Software Engineering class which included unit testing and software engineering concepts</p>
+        <a href="https://github.com/jpt333/ClueGame">Click for Project</a>
+    </div>
+  </div>
+  <div class="portfolio-grid">
+    <!-- Repeat project cards -->
+    <div class="card">
+        <img src="proj1.png" alt="">
+        <h3>Mobile App Development</h3>
+        <p>Developed a mobile app for Android devices with a partner.  I focused primarily on the front-end of the app and also worked a bit on the backed. Created a website with a chatroom for students to communicate with one another.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills & Tools</h2>
+  <ul class="skills-list">
+    <li>Java</li>
+    <li>Python</li>
+    <li>MYSQL</li>
+    <li>SQL</li>
+    <li>PSQL</li>
+    <li>DynamoDB</li>
+    <li>Amazon Web Services (AWS)</li>
+    <li>HTML & CSS</li>
+    <li>WordPress</li>
+    <li>JavaScript</li>
+    <li>C++</li>
+    <li>C#</li>
+    <li>TypeScript</li>
+    <li>PHP</li>
+    <li>AngularJS</li>
+    <li>Kubernetes</li>
+    <li>Docker</li>
+    <li>Jenkins</li>
+    <li>jQuery</li>
+    <li>XML</li>
+    <li>AJAX</li>
+    <li>React Native</li>
+    <li>Scala</li>
+    <li>Kotlin</li>
+    <li>Git</li>
+    <li>Linux</li>
+    <li>Visual Studio</li>
+    <li>CLion</li>
+    <li>Eclipse</li>
+    <li>SourceTree</li>
+    <li>Postman</li>
+    <li>IntelliJ</li>
+    <li>SolidWorks</li>
+    <li>Azure DevOps</li>
+    <li>Android Studio</li>
+    <li>Jira</li>
+    <li>Confluence</li>
+    <li>Frontend</li>
+    <li>Backend</li>
+    <li>Full-Stack</li>
+    <!--…-->
+</ul>
+</section>
+
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Put Education and Certs in different categories and put certs near the top of the page-->
+<section id="learn">
+  <h2>Education & Certifications</h2>
+  <div class="portfolio-grid">
+    <!-- Repeat project cards -->
+    <div class="card">
+        <img src="proj1.png" alt="">
+        <h3>Colorado School of Mines</h3>
+        <p>Bachelor of Science Degree in Computer Science</p>
+    </div>
+  </div>
+  <div class="portfolio-grid">
+    <!-- Repeat project cards -->
+    <div class="card">
+        <img src="proj1.png" alt="">
+        <h3>AWS Cloud Practictioner Certification</h3>
+        <p>2024</p>
+    </div>
+  </div>
+  <div class="portfolio-grid">
+    <!-- Repeat project cards -->
+    <div class="card">
+        <img src="proj1.png" alt="">
+        <h3>COMPTIA Security+</h3>
+        <p>2022</p>
+    </div>
+  </div>
+  <div class="portfolio-grid">
+    <!-- Repeat project cards -->
+    <div class="card">
+        <img src="proj1.png" alt="">
+        <h3>Microsoft Excel, Word, PowerPoint</h3>
+        <p>2016</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact-wrapper">
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p>Have a project in mind or just want to say hi? Fill out the form or email me directly.</p>
+      <p>Email: <a href="mailto:jpt4542@gmail.com">jpt4542@gmail.com</a></p>
+      <br>
+      <p>Let's Connect on LinkedIn.</p>
+      <a href="https://www.linkedin.com/in/jennifer-phan12/" target="_blank">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuCAMAAAClZfCTAAAA7VBMVEUCdLP///8CdLABdLYAY6EAdbTd9PoGcrH///kAZqQ0f7C+5e/8//8AdbYAdLf//v0Ab7Q6damPr8r//f/C3fD1//+Hr84AZKUAdq4AdLoFc60AcLEAZJ7//fj///cHcbgAXqUAZJkAd6kAdMAAa6cAarEvdKRtmLqbwNi32OfK5PK/1OGavcxrnrhckbS41OhDd6kAapx2pbpsocXb6fJHhL2Mutbr8/fc7/ypzNzl//94qMUAZpSPt8w2eqYwe7NNhqtWm8Sf1eqLyOB5pcZMfJ0AWpDP7veFqrmzzNNfl7UAYZGZtdPW9vu07Piyra8bAAAKc0lEQVR4nO2diX/TOBaAdcSRQ3UYXNeHcjTUvVIodMo07TBQYFi6Oyz7//85++SkZ5Sa2Qkbh7wPfiUUpbE/pKfr2SYEQRAEQRAEQRAEQRAEQRAE+RngN68E/BbuhVrawTQTrbngXAsiuBDCEsW1XvYxNQzOCWNFwVigdJ5lfBCJbNnH1DxUwBj8Ibge7GhWVH9BbhFQeXKtB7sp0LGuLg14/dvWCSZyLbp7+weHo9HRi5dPd3ewoT2ACdI9Pkwo7fUMpTJ5ddxd9iE1Bm4ZxOlBXu6BILBjDJXS9E1y+LpUSuigWPYRLh3o7BUr8vQUBJmYTnGiktPUuhi+7CNcPtxGA3XySxIbKa8NSXAkZfI2IpndWfYBLh/F7c7uLxJi0I0hKk2vR+NYnkaFGCz7AJePYhm/dK0MDPXobUuDb/STJxaHR4QEARleQY1xzSyk9I6kpN8bdQUqCkgUnSZhbEII1tOmZlxbkzKOQ/kywoZGiE3fmElvP0v4Zps4jUQs+yiXieBPpFdPpYj+yqq2uNaKtN0yPekVJGlozkrhqtF6K2odhsavKITWt9m1yz7CZcN0+mZOK4vDOKbnHb7uM/6Cp+M5sTruw1hgLFAR3x7LOYpCGpsx5zxY9kEuFya2z01IfYoMhQH2OFpzQYBOR3P7fCr7ozRYe0d594DemeTf9ePMXXTIujsKdHEs5yiCWa08Xfs+nwgRlO05imBW+9sQFQVM2wPqHTrKPqUvItxx5ELxol0tqMV3TLkILnsm2dO4GKLc0uxbCNjVuv5dRRJi0duOXvNYTaqdaiKGF0nsVtVu/EiHoRfdAteuK0XgaAOaWdI3t63MhH26cUIKki/7CJsB178f0l6/d7NJFMeg6bDMGWG4j0aqcKzz7rvkJhbBnI3K386GPBecYLhmTBFBhOadJ6+q4bQL1GDp4n1HMZFzhQ1tCgt4tF1uHbWTRCbto62nKVeTNDVMVrtGaG1FmZaXl79elp1Ia2xhDxCWa8VcdC6EcH5wi3EGl+k4+Z3ntsieZwRTsGbgOuJZBc+56+SWfUANo6oxrolpza2rSTnWoRsYUXyaMQvdmtYqIEXGJhm0jOi7poTwbacpreEfrjcBOIfXzrSCHwAv3OvJNC/IYDa4kp1ApYhVZ/WAiGVqoG7OSQhrhaeYDtid4O4iPYh1CbegzaXAWc4C4fYqQT605uWc5d/BjX6KosiKGdhODhWETbNCp/Vntph7L1PqurYFzEUzVl0C4NRVudzCDVGFhlL5zuo14MkAUflqEZwsg9HSpJyo9q2JpxyHMdUABlWTctZa7rpFF9Nsx6Uop/AtHUFwK9xoYkWnfKo6H1G1pDtfoM0I6OUmZUCRSxCx8Gta4rqoqOpKMW1q1kKoz6NyuPfh7dnB4dHo6PDgYGv/fdFJd9nz5yznq7hboG3ZbaWzbG+nJbSSSSFXSwJrPcUqdnemYwQoz4rhh4NRO6nWnFy+AEz9kvbo4uNJR3BFVnBHRfPup9GmB6gCf5yQaXx1Dc1Gylduc/No86O4qW3l3rtzt7/bM25NJQQ/Ya9agXLZ3GW5enM+oYhqffPuM4aUbnTJNBZxp8g+8RYE3pUZG+xkWd45OfjtdmHuTrZA5Sw5f3ZSqJ2IueuVViUhR3CmWm2/Imk2OsH1iQimuHhCfZslsTFbUSYG0G21Pn9LJssps0yWx68+btvVuganVtH1PtqjiuhWJGBmJ55uQviZq2iyaUAPhtnzpZ7zX2RhirTIOh/aSXUNiR8nzxjZC0elZRC0VyWFcmGKmEo/y17fbZ74c3HoJJubyr45v7R8DRVlnVPZM/6t7/uVSdLeeRnZlUnEXYQiGPpsReW+NH0ZU3N/z/JuFaqyuWEoYEL5Bobcq5KIuwBFxiR0y/5jXrKbnxedAQv4+iiCWvTlqurLapvZNckHmNrolZjTLkCRS6z957vK0Pcrou1WXpCVWBpZkKJ/jase/bsF0R59CwPyNalFEHzjMIl7f8kQDcP270WwEhO2RcSiRPahl/L3Y/OAnu3liixBLkBR7BTR6oK22+RkU9Pw4J9GKV+JqdoixkWzVeRa0yOKQkn3VuPa5B+haKJG1ja8s9VIe/8Bim5a2GNFXZrgKF2XoeOso9pI5DKW+ya5XImM5UUrms7EJH08FE2yuvd1ta3ScH6EomQ8Hr8Zjx8rCdHaLa6tRDBaoKKwT+MebV/8+X6vLMti78OZm7e5EZOvMPx0M+pAJWr89W4LUxS7pRB5tf+lVPlgYKPIivLLcVvK0NveoBqZXnu4VopMT8b0oIx0PshhBq/znAsdnVzI2zzc++UlDMv33Ebw2ijqm1g+S3nGhBBFxgKlFHgKvh7N2w5xU9ljvk6K4JzfdVVeVBkhwWQbKCtyfnIV+1qa7BkYGX2OoJ01fRqyuIZGRy2VWZdRlOfXF9cUIrd/zrlMySSGnu2KNVLUT16zjBQ2ElVyqXL5ITs6U4PuyI0l6YPLb0GRu8gkdbeT/PkVTQaL9NWuZQ+GOVCbGCtPaRi7NSXPRxyledH4NaNF1SIjjyOIvfcnXVyQgIthEs7WogmjVl40PVovRpGbkLVPcvUw1T9wibe2OzLxpK3NcN7Sa6EIBjg9CCudXAT6fi0KAhENeHnmxkDSp6jd1azxS4+LUQSnvx/ljOT2nqPA5blpckpl7L+5TbvkrPGXUixCUbX/+n4wKB4q4gSGSS4raa6iIWf5GihysSgedzV03jPbqy511l6Ow9i/w5aUhKmmJxstotOHyXx8ns7ffd5r9/wdGk2KgARroIjGUppROdeQKOcrKhlp/Br/YpJnQujQxLxsGFFehf4+nyZPV2DZcTGKJD2oArU/xTMdeVfVKkXMrRj9/073f2FRiv4dVYWsx5FKR/46VCkKAtvwkdFiFJlKkevgPR+h0o15iiQoUuLnV1TdTONZNP8zOhswMPJ3+k+JUvbnb2h/T5FWTd9MQ0W1oKJaUFEtqKgWVFQLKqoFFdWCimpBRbWgolpQUS2oqBZUVAsqqgUV1YKKakFFtaCiWlBRLaioFlRUCyqqBRXVgopqQUW1oKJaUFEtqKgWVFQLKqoFFdWCimpBRbWgolpQUS2oqJalK+KNVwSobtt7R4bQ3L1TMQFF1p93/R2K6BxFr6EWNf0GmKxQ+uu3MJy5T4yhJnT3u55exMKI0tbVoodZ5sbdxcDQrUfqQmvDPRnTq+i92FGZL+W/QTDGefc/39p+PqW3Z660EE/mFWy/fURR99O8d13tiTxgjX8sC4SY7rDlYfj161DcXgqleMAKX7lWK221dgfzP2FntwuFur53loFibAUe7cOVVj4YY+pakWsLAfx9loBo/fgddbUK3A/zfYQgWSEarsjd1ERNnvb1kDwfaPvgwhdPMcaCIguKRx7w4R6XkmXed2qbMdv0mxk4R4zBH/B/eu8LF9WtKdW9suq6BL/5olReFPljd7XgGqJNVVPvv5Nr6AIyFTX9ssapIjGLuyaT3Xloh3uOhaeYIJyxR+85LDR3DyXyvDUQNlBNv2cIgiAIgiAIgiAIgiAIgiAIgiA/nP8C/ZouIf43mbcAAAAASUVORK5CYII=" alt="linkedin" style="display:block; margin-right: auto; width: 15%;">
+    </a> <p>
+    </div>
+    <div class="contact-form-container">
+      <form id="contact-form" action="https://formspree.io/f/yourFormId" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="_replyto" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+        <p class="form-status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<footer>&copy; 2025 Jennifer Phan. All rights reserved.</footer>
+
+<script src="script.js"></script>
 </body>
-
-<!-- <div style="background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(31,204,112,1) 0%,rgba(0,212,255,1) 100%);  -->
-<div id="name">
-        <h1>Jennifer Phan</h1>
-</div>
-
-<div id="hellos"; style="text-align: center; margin: auto; margin-top: 75px;">
-    <div id="hi"; style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(85,212,144,1) 0%,rgba(0,212,255,1) 100%);width:250px;height:10px;display:inline-block;"></div>
-    <div id="hi"; style="font-size:20px; font-family: Arial; text-align: center; padding: 15px;">My Journey</div>
-    <div id="hi"; style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(85,212,144,1) 0%,rgba(0,212,255,1) 100%);width:250px;height:10px;display:inline-block;"></div>
-</div>
-
-<div>
-    <div style="float:left; margin-left: 25%;">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEUAAAD////7+/uqqqrr6+uXl5fOzs7FxcUpKSkjIyO3t7eJiYkTExN2dnZ8fHzv7++fn5/29vba2tq9vb2CgoIyMjJWVlYNDQ2Pj48sLCzKyspfX19nZ2c4ODilpaXm5uYcHBxDQ0NNTU1ubm5ISEgREREpNHO3AAAE8klEQVR4nO2b6WLiIBRGg7vWPdpqN7fO+7/iVNuq4S6AEdLMfOdvaMJpCNzLxSwDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABg82Aa5TDNqhUcPJiywLBqYAhDGFYPDGEIw+qBIQxhWD3/vuGhE0rdDMOBYf2BYf2BYf2BYf2BYf2BYf2B4a9hO37vzluT2WzSmnebqzfvP6yH4SGf2R0186mf5d0Mm4Mi6o22ebFxflAa7wbE7pvNyqNjdzOchNxpbTdui033c8nvxLuzY3czbJGHK++l52vYf1b9jiyqMzTL0oZe+07zbWWGk7KG+gC98FKVoXkuZfjW8BQ0RptxohqKn5eP4Yu33yfTqgzN482GryGCmmJkQ/N0o2HQGzwiTqmxDTe3Gb6FCorDJbqhyW8ypEGakwY/XOIbssPHZUiKDT7MqzI0u2DDseSQN5vNQUd6wQ9VGc6CDdnb5JcPbbjiY4FeRYbM8NENc+Yez9viHT4YRz4KT2FIH60acvPomD5wZIU8eWUzzRE7zVANmXSCXQmeNlctOmI6nMbQrP0NyTVjXoVnnkfqRom9ExlaaYZmSDN6uU9fb3GmpoiJDK00QzMkGYWchH01lvcHkhoWExzFkEbczCxz5mAGro4lMyzMFoohWSq0V5hl8j5CesPruFExJINUSf28SGd4nWbIhnQx7JcTTGl4lWbIhiv7SqukYFLDy5whG5K1wjmTVGb4TLaIzSXNkA1JuOnaDq3OMOfCy580QzYkE42Vew37Dv4kM+zST8qc0wzZkPyF9RjupgXIO49oyIXQ32mGaNi3LzSsxzh3wUl8ENOQVmvMdxQtGn7YF+z1/pcZLrku9DTDvX3B3qv7ZYbshsskruHI7th4VGR/V0MmFTqlGRENtVprOXjDbMN0YiUb7kobqnWoGIZ9roC030qGT/aF4JlG2vqOZshWWBpylZu0DTVkdxSjGmZNphtkGTkbkt3eUMNogrKhVyX3bEj2863vymXIbD/HN6SxpmJI3riVALsMheJFZMPHAMOFfaVTfIwrLi2dbN1kmLX9Dclkan1YT8MCJDD0OUMUwdBdLbvs05BJSE8Q7dYfceyOqIbOiufFkERBfBX5m5HV2E5F7oluuPM2JHGbuKd/xJ6nO0rbsuiGdAaRDOkwVTZMSTgR8TN0GbJFQdZwSi7K+Q4Z/MM4cidchvpm3JUhnU3FfX0S1kdcDT0MmaoZa8hlXLwiDZa0EkdpnIbZwdOQJB6GHahLOihizqQ+hmwMzhjSdp9h38TObN+Zu5Qtceh4GLLpMGPIr56T6aXOtGT/WXFfoZchf4yEGkqn9mad/H3abnaF+IE/T5PWUIzBrTqueHZdQw1+Uhkyix1rqIxnGf+fYMQ0lNJh23AYfnQv8hj1NhRicHLaIPj4JXsG8q74GtLImjXMdmGCUaOZL3wN+SydOTGyDhmoCQT9DbOun6H/jxFSDNEsxJArSfGnfpQgqED0SeZEgCFTkhLONe19Vo2N+0zNXQgwJHsPysmtB9fXOCld6PfF7on4e5kjJGZRYuYVV2f9oZVmgJ5YF+it9YM+y2Lz9VZr/CLsD8wG8cowyXmcWufXW/mKOSFfd/Yvi/Z02l68PsYrMAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/G/8BZmLRAswPSA0AAAAAElFTkSuQmCC" alt="ngc" style="width:150px; height: 150px; border-radius: 20%;">
-    </div>
-    <div id="section">
-        <div id="place"; style="margin-top: 50px;">
-            Northrop Grumman
-        </div>
-        <div id="year">
-            April 2021
-        </div>
-        <div>
-            Aurora, CO
-        </div>
-        
-        <p>
-            Working as a Pathways Associate Software Engineer at Northrop Grumman since April of 2021. I currently have an active TS/SCI clearance.  
-            Co-workers I have met at the company has been really nice and friendly.  Have been utilizing linux, python, java, and C++ to provide good 
-            working services to the clients and analysts.  Currently learning more about Docker and poetry to help the efficiency of the software.  Have been
-            working in an agile environment with daily scrum meetings and sprints along with agile development.
-            
-        </p>
-    </div>
-</div>
-
-
-<div>
-    <div style="float:left; margin-left: 25%;">
-        <img src="https://www.usnews.com/dims4/USNEWS/e885db3/17177859217/resize/800x540%3E/quality/85/?url=https%3A%2F%2Fmedia.beam.usnews.com%2F2e%2F84cd5d4998a1fb0f1703eb14852539%2FHero_Shot_-_Guggenheim_a.jpg"  alt="mines" style="width:150px; height: 150px; border-radius: 20%;">
-    </div>
-    <div id="section" style="margin-top: 80px;">
-        <div id="place">
-            Colorado School of Mines
-        </div>
-        <div id="year">
-            B.S. in Computer Science, earned in December 2020
-        </div>
-        <div>
-            Golden, CO
-        </div>
-        
-        <p>
-            Having graduated from this school was amazing.  Learnt from many amazing professors and met many inspiring people on campus. 
-            This school threw many challenges and it was fun solving each one of them.  
-            I participated in many societies and clubs.  I was vice president and treasurer in the Society of Asian Scientists and Engineers at Mines.  
-            I was also a member of club tennis at Mines traveling to compete in my favorite sport.  I was glad to get to know everyone who was in the MEP 
-            (Multicultural Engineering Program) family. At the school, I worked as a desk assistant in one of the residence halls as well as be an office assistant
-            in the Computer Science department.  As Data Structures was one of my favorite classes, I was also a TA grader students' projects and labs.  
-        </p>
-    </div>
-</div>
-
-
-
-<div>
-    <div style="float:left; margin-left: 25%;">
-        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBg0NBw8NEA0QEA4QDQ4QEBIPDxQNIBcYIiAdHx8bKDQsGhwxJx8fJT0tJSosOjo1IyA1RD8sOig7LysBCgoKDg0OFxAPFSsZFR0rKy0tKysrLS0tLTcrKystNzc3KzctLS0tKysrLS03KystNysrKy0tKzcrNysrNysrK//AABEIAMgAyAMBEQACEQEDEQH/xAAcAAEAAwEBAQEBAAAAAAAAAAAABQYHCAMEAQL/xABCEAABAgMEAwoLBwUBAAAAAAAAAQIDBAUGBxE2EnSxEyExNHFys8LD0RQXM0FRVGFzhJOhFlNkgZGSlCIjMlWyUv/EABoBAQADAQEBAAAAAAAAAAAAAAABAgUDBAb/xAAjEQEAAgEEAgIDAQAAAAAAAAAAAQIFBBESMSEyIkIDFWFB/9oADAMBAAIRAxEAPwDLT0OIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATsAAgCTcISBAAADZIPGyN/PiAeDzsDtP8AZB5R463AAAAAAAAAAAAA+yjyaVCry0u9VakaPBhK5ERVRHPRMfqRKYbB4kpD16P8pnec+a/FFWnumk6JQJmbhzcZ7oMNXoxYbURV/Umtt0TVD3dXfy1rqZGjx5iJCWHG3NGtY1yKmii47/n3ybW2IhbfElIevR/lM7yvNPFm9vrNwrK17wSDFdFbuTImm5qNXFcd76F6zurMK2WVAP7hM04rW+lyJiJTDaPElIevR/lM7zlzW4vkq9z0lT6VMzDZyM5YMGNFRqw2oiq1qrhw+wnnM/4cdmc2bosOsOipEe5mgjFTBEXHHHuPJrdZOn4+Hu0GijUcvPSc+xEv9/E/YhnfuLb+rRnC128WQNo6OyjxobYb3P02uXFURMDS0Oqn80Szddo400x5Q57meAAAAAAAAAAACVspmina5K9I0iUw6uODqrV4+Rqj7h21Ca9olVLgsuTmtdmwtftFWoFFnPt+GdvhoO1x1o52Z8XVAPWW4zD5zdpEpdfHB1Rdqcs1DVJro3CET05+u+8pM8kLrGXmPq2cL3ZczCfQqTb/AI1L8x+038R62fOZn2qqhtMMAAAAAAAAAAAErZTNFO1yV6RpEph1ccHVWrx8jVH3DtqE17RKqXBZcnNa7Nha/aKtQKLOfb8M7fDQdrjrRzsz4uqAestxmHzm7SJS6+ODoi7U5YqGqTXRuJglgV3MNHxZrHHeSF1jMy/1a+Ht5su+4N9K/Qw4hu81FvFYjJuXwx/wftN7Ex8bMDMT8qqgbDFAAAAAAAAAAABK2UzRTtclekaRKYdXHB1Vq8fI1R9w7ahNe0SqlwWXJzWuzYWv2irUCizn2/DO3w0Ha460c7M+LoAPWW4zD5zdokdfHndEXanLNQ1Sa6NxMEsFu18rN8kHrGZl/q1cR9l5MNuqFeRxyW5j9qG9ifWzAy3tVTjYY4AAAAAAAAAAAJWymaKdrkr0jSJTDq44OqtXj5GqPuHbUJr2iVUuCy5Oa12bC1+0VagUWVO0t39EtLUvCqlu+66DWf0REa3RTHDew9pMW2RsivE/Zb8X85O4nnKOJ4n7Lfi/nJ3DnJs/WXQ2YY9HN8LxRUVP7ycP6DkcWgFVkXanLNQ1Sa6NwhEsIuwYj4s3j/5g9Yzst9Wnip9l+3FvtMRt8mfXmsRk7LYfdv2m5ivWzDys/KqlGwyAAAAAAAAAAAAStlM0U7XJXpGkSmHVxwdVavHyNUfcO2oTXtEqpcFlyc1rs2Fr9oq1AosAAAH4B+gRdqcs1DVJro3CESwq67ys5yQesZ2W+rTxUezQDEbOzO70OOyvu37TdxXrZiZT2qpJrskAAAAAAAAAAAErZTNFO1yV6RpEph1ccHVWrx8jVH3DtqE17RKqXBZcnNa7Nha/aKtQKLMNvhrtYp1r9zp83NwYfg8F2hCjxIbNLF2/ginStd1JlR/tZaT/AGNQ/lRu8txhXc+1lpP9jUP5UbvHGDd6S9q7RujsRahUFTSbiizUbgx5RNUxLqY4uiLtRlioapNdG4mESwW7V2jFm9/Deg9YzMv9WriI9l63RfT9TEbnFQryXaU5Lb+P9D9pvYn1swctHyqpprscAAAAAAAAAAA2N0vZBqvtXTUbw+GSvSNIt0mHVZwdFbvHyNUfcO2oWr2SqlwWXJzWuzYTftWrUCi7n2/DO3w0Ha460c7M+LqgHrLcZh85u0iUuvjg6ou1OWahqk10biY7RPTn677ykzyQusZWY6q2cL3dczCfQqTb/jUvzH7TfxHrZ85mfaqqG0wwAAAAAAAAAAsbbC2miSkGPBk4sSFGhsiwnQ9F+MNyYpvIuKcPnK8ltl4uvu7qkrW4c/XIe4sg4ugwnKixHxcMEVUT/FE4d/z4FZsmIbQc11RvVmmytgp5XLvvbDhtT0q57U2Yr+RavaJV24LLk5rXZsJv2rVqBRdz7fhnb4aDtcdaOdmfF1QD1luMw+c3aRKXXxwdEXanLNQ1Sa6NxMdk9OfrvvKTPJC6xlZjqrZwvd1zMF9CpNv+NS/MftPoMR62fOZn2qqhtMMAAAAAAAAABJDrWiS/glGlYPBucCCzDkYiHnmXZ9wADDr67VwajNQ6bIOR0OA9XzDkXFqx+BG/kirj7V9h0pXZztKw3BZcnNa7NhF1qtQOazn2/DO3w0Ha47Uc7M+LqgHrLcZh85u0iUuvjg6oq1OWahqk10bhHaJ6c/3feUmeSF1jMzETEUbOEmJm/hczAnw+h/ik2/41L8x+0+gxExxs+dzUTFqqobTCAAAAAAAAAH61cHIu8u+m8BrclfdGa1EnZBjl86woysT9FRdpz4L8n1xL75ZGf25CIrvQsdqJ/wAjgclUtJepXqzBdCltCUguRUckJVWKrfQr14PywJ4I5KGWVXKxN4E3ZGQiwJaBCipEibornuciouiiYb3IRNd1onZYvHbU/U5b97yvBPJR7YWkjWqq/hcxDZDdubIegxVVMEx39/lLxGysygyUAH9Q36ERrk8yooGpeOyp+py373lOC3J81SvhqM/T48u+Ul2tjQokJXI9+KI5qpj9RFIOSkUOtRKO6IsJjX6aNRdJVTDDHvPNqtJH54h7NJrJ08ztHaW+28z9zC/c48X6iu3s9s5i0zHxRFcrESsRWOisazQRUREVVxQ92m0sfhjw8Gr1c6iY3Rh63jAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//9k="  alt="jhi" style="width:150px; height: 150px; border-radius: 20%;">
-    </div>
-    <div id="section">
-        <div id="place">
-            Janus Henderson Investors
-        </div>
-        <div id="year">
-            Summer 2018, Summer 2019
-        </div>
-        <div>
-            Denver, CO
-        </div>
-        <p>
-            I'm grateful to intern at this company and work with such amazing and inspiring people.  Everyone I met at the company is friendly and welcoming.
-            I learned what the work life at an investment company is like as a software developer intern for two summers.  Creating web applications were challenging
-            and fun.  Worked with great managers and the team who were able to offer help despite their busy work schedules.  I am extremely grateful to be given the opportunity
-            to be part of the team there.  The experience here helped reassure my passion and interest in Computer Science.
-        </p>
-    </div>
-</div>
-
-
-<div>
-    <div style="float:left; margin-left: 25%;">
-        <img src="data:image/png;base64,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"  alt="mrhs" style="width:150px; height: 150px; border-radius: 20%;">
-    </div>
-    <div id="section">
-        <div id="place">
-            Mountain Range High School
-        </div>
-        <div id="year">
-            Class of 2017
-        </div>
-        <div>
-            Westminster, CO
-        </div>
-        <p>
-            Most of my time during high school was playing tennis and studying.  Tennis was where my heart and passion was as I 
-            loved competing and meeting new friends.  I competed thrice at the state tournament for tennis and participated in 
-            robotic competitions.  During my last year, I was a National Honor Society Co-President which promoted a lot of volunteering
-            opportunities.  I also co-founded and was an active member of Girls Who Code club at the school.  The one computer science class
-            I took and the club was the start to my journey of going on the path of computer science.
-        </p>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-<div id="me">
-    <div id="hellos"; style="text-align: center; margin: auto;">
-        <div id="hi"; style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(85,212,144,1) 0%,rgba(0,212,255,1) 100%);width:250px;height:10px;display:inline-block;"></div>
-        <div id="hi"; style="font-size:20px; font-family: Arial; text-align: center; padding: 15px;">A Bit About Me</div>
-        <div id="hi"; style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(85,212,144,1) 0%,rgba(0,212,255,1) 100%);width:250px;height:10px;display:inline-block;"></div>
-    </div>
-
-    <div id="category">
-        <p style="font-size: 20px;">
-            Born and raised in Colorado.  My love for noodles is strong.  Banana is a great word. \ (^-^) /
-        </p>
-    </div>
-
-    <!--Put pictures of colorado, noodles, and banana-->
-    <div style="margin:auto; text-align:center">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFWh8Pp41FD8zuozV3c4FHBTTBGiI6SHMGLQ&usqp=CAU" style="width: 300px; height: 200px;">
-        <img src="https://static.toiimg.com/thumb/53886706.cms?width=1200&height=900"  style="width: 300px; height: 200px;">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAgG1ek5xyanlgLfN7PSNqJpWqbkhmBar1Aw&usqp=CAU" style="width: 300px; height: 200px;">
-    </div>
-
-</div>
-
-
-
-<div id="connect">
-    <div id="hellos"; style="text-align: center; margin: auto;">
-        <div id="hi"; style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(85,212,144,1) 0%,rgba(0,212,255,1) 100%);width:250px;height:10px;display:inline-block;"></div>
-        <div id="hi"; style="font-size:20px; font-family: Arial; text-align: center; padding: 15px;">Noodles</div>
-        <div id="hi"; style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(85,212,144,1) 0%,rgba(0,212,255,1) 100%);width:250px;height:10px;display:inline-block;"></div>
-    </div>
-    <p style="font-size: 20px; text-align: center; font-family: Arial;">
-        Let's Connect on LinkedIn.
-    </p>
-    <!-- Image of LinkedIn and put the link to my page -->
-    <a href="https://www.linkedin.com/in/jennifer-phan12/" target="_blank">
-        <img src="data:image/png;base64,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" alt="linkedin" style="display:block;  margin-left: auto; margin-right: auto; width: 15%;">
-    </a>
-</div>
-
-<div id="connect">
-    <div id="hellos"; style="text-align: center; margin: auto;">
-        <div id="hi"; style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(85,212,144,1) 0%,rgba(0,212,255,1) 100%);width:250px;height:10px;display:inline-block;"></div>
-        <div id="hi"; style="font-size:20px; font-family: Arial; text-align: center; padding: 15px;">Git Hub Projects</div>
-        <div id="hi"; style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(85,212,144,1) 0%,rgba(0,212,255,1) 100%);width:250px;height:10px;display:inline-block;"></div>
-    </div>
-    <p style="font-size: 20px; text-align: center; font-family: Arial;">
-        Repository for Projects
-    </p>
-    <!-- Image of LinkedIn and put the link to my page -->
-    <a href="https://github.com/jpt333" target="_blank">
-        <img src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU" alt="github" style="display:block;  margin-left: auto; margin-right: auto; width: 15%;">
-    </a>
-</div>
-
-
-<!--Ending-->
-
-
 </html>

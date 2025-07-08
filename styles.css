@@ -1,0 +1,209 @@
+:root {
+  --bg: #ffffff; --fg: #222222; --accent: #4ee1a0; --trans: .3s;
+}
+[data-theme="dark"] {
+  --bg: #121212; --fg: #e0e0e0; --accent: #4ee1a0;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Segoe UI', sans-serif;
+  transition: background var(--trans), color var(--trans);
+}
+.navbar {
+  position: sticky; top:0; display:flex;
+  justify-content: space-between; align-items: center;
+  padding: 1rem 2rem; background: var(--bg);
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  transition: background var(--trans);
+}
+.nav-links a {
+  margin: 0 1rem;
+  color: var(--fg);
+  padding: .5rem;
+  position: relative;
+  transition: color var(--trans);
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: var(--accent);
+  transition: width var(--trans);
+}
+.nav-links a:hover::after { width: 100%; }
+.hamburger {
+  display: none; flex-direction: column; gap: 4px;
+  cursor: pointer;
+}
+.hamburger span {
+  display: block; height: 3px; width: 25px;
+  background: var(--fg); border-radius: 2px;
+  transition: transform var(--trans), opacity var(--trans);
+}
+@media (max-width: 768px) {
+  .hamburger { display: flex; }
+  .nav-links { display: none; flex-direction: column; }
+  .nav-links.active { display: flex; }
+}
+.theme-switcher {
+  position: relative; width: 50px; height: 24px;
+}
+.theme-switcher input { opacity: 0; width: 0; height: 0; }
+.theme-switcher label {
+  position: absolute; background: #ccc;
+  border-radius: 34px;
+  width: 100%; height: 100%;
+  cursor: pointer;
+  transition: background var(--trans);
+}
+.theme-switcher label::before {
+  content:'';
+  position: absolute;
+  background: var(--bg);
+  border-radius: 50%;
+  height: 20px; width: 20px;
+  top:2px; left:2px;
+  transition: transform var(--trans);
+}
+.theme-switcher input:checked + label {
+  background: var(--accent);
+}
+.theme-switcher input:checked + label::before {
+  transform: translateX(26px);
+}
+section {
+  padding: 2rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 2rem;
+}
+.card {
+  background: var(--bg);
+  padding: 1rem; border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05);
+  transition: transform var(--trans), box-shadow var(--trans);
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0,0,0,.1);
+}
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: var(--bg);
+}
+
+#contact {
+  background: var(--bg);
+  padding: 4rem 2rem;
+}
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.contact-info h2 {
+  margin-bottom: 1rem;
+}
+.contact-info a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.contact-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-form-container input,
+.contact-form-container textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color .3s;
+}
+.contact-form-container input:focus,
+.contact-form-container textarea:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+.contact-form-container button {
+  background: var(--accent);
+  color: var(--bg);
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background .3s;
+}
+.contact-form-container button:hover {
+  background-color: #b2f7f1;
+  color: black;
+}
+.form-status {
+  font-size: 0.9rem;
+  color: var(--fg);
+  min-height: 1.2rem;
+}
+
+/* Links & hover */
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  background: var(--accent);
+}
+
+/* Buttons */
+button, .btn {
+  background: var(--accent);
+  color: var(--bg);
+  transition: background .3s;
+}
+button:hover {
+  background: hsl(
+    /* slightly darker for hover */
+    calc(var(--accent-hue))  /* optional: use HSL variables */
+  );
+}
+
+/* Form controls (checkboxes, radios, etc.) */
+:root {
+  accent-color: var(--accent);
+}
+
+:root {
+  /* Light mode accent */
+  --accent: #4ee1a0;
+  --header-accent: var(--accent);
+}
+
+[data-theme="dark"] {
+  /* Dark mode accent tweaked for header */
+  --header-accent: #4ee1a0;  /* lively green accent */
+}
+
+.navbar {
+  border-bottom: 2px solid var(--header-accent);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--header-accent);
+}
+
+.toggle-btn span {
+  background: var(--fg);
+}
+[data-theme="dark"] .toggle-btn span {
+  background: var(--header-accent);
+}
